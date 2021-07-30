@@ -40,8 +40,8 @@ Option = 1
 # ------------------------------------------------
 
 filepath = os.path.dirname(__file__)
-bg_random = pygame.image.load(os.path.join(filepath, "Menu.png"))
-bg_waves = pygame.image.load(os.path.join(filepath, "Menu_waves.png"))
+bg_random = pygame.image.load(os.path.join(filepath, "imgs/Menu.png"))
+bg_waves = pygame.image.load(os.path.join(filepath, "imgs/Menu_waves.png"))
 
 
 # ------------------------------------------------
@@ -445,4 +445,5 @@ buttons = [plusButton, minusButton, BubbleButton, QuickButton, MergeButton, rand
 #   running program
 # ------------------------------------------------
 
-mainLoop()
+if __name__=="__main__":
+    mainLoop()
